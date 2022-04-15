@@ -1,0 +1,3 @@
+<aura:component controller="ControllerApex"> 
+    <button onclick="{!c.generarPalabra}">GENERAR PALABRA</button>
+</aura:component>	

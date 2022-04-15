@@ -1,0 +1,18 @@
+<aura:component implements='force:appHostable'>
+    
+    <aura:handler event="c:eventos" action="{!c.setPalabra}"/>
+    
+    <h1 style="color: blueviolet;"><strong style="font-size: xx-large;">WORDLE</strong></h1>
+    <br/>
+    <input maxlength="5" aura:id="palabra" type="text"/> 
+    <button onclick="{!c.comprobarPalabra}">SUBMIT</button>
+
+    <aura:attribute name="palabraComprobar" type="String" />
+    <div style="display: none;" id="palabraCheck"></div>
+    <div style="display: none;" id="vidas">6</div>
+    <div style="display: none;" id="jugando">0</div>
+
+    <br/>
+    <div>PALABRAS PROBADAS:</div>
+    <div id="tablero"></div>
+</aura:component>	
